@@ -5,5 +5,125 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+
+    <!-- ScrollView untuk memungkinkan pengguliran -->
+
+    <!-- TextView untuk judul di atas ImageView -->
+
+    <!-- ScrollView di bawah TextView -->
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="334dp"
+        android:layout_height="85dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textColor="#6672FF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Full Name" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/etDob"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:focusable="false"
+                android:hint="Select date of birth"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="406dp"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="406dp"
+                android:layout_height="50dp"
+                android:hint="Address"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/buttonCreate"
+                android:layout_width="184dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Create" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
