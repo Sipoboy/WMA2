@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">WMA</string>
+    <string-array name="nama_mhs">
+        <item>alief</item>
+        <item>candra</item>
+        <item>darmawan</item>
+        <item>joshua</item>
+        <item>farhan</item>
+        <item>maulana</item>
+        <item>rai</item>
+        <item>rais</item>
+        <item>fino</item>
+        <item>faris</item>
+        <item>bustat</item>
+        <item>tyo</item>
+        <item>illham</item>
+        <item>raffi</item>
+        <item>deden</item>
+    </string-array>
 </resources>
